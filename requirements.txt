@@ -1,6 +1,4 @@
-numpy
 sphinx
 pandas
 matplotlib
-quantecon
 jupyter-book

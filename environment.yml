@@ -1,0 +1,13 @@
+name: data-analyst
+channels:
+  - default
+  - conda-forge
+dependencies:
+  - python=3.8
+  - sphinx
+  - pip
+  - pandas
+  - matplotlib
+  - pip:
+    - jupyter-book
+    - ghp-import

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Selamat datang di buku Data Analisis dengan Python &#8212; Data Analisis menggunakan Python</title>
+    <title>Bab 4 Exploratory Data Analysis &#8212; Data Analisis menggunakan Python</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,7 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Bab 1 Memulai pemrograman dengan python" href="chapter-1.html" />
+    <link rel="next" title="Bab 5 Perkenalan dengan Machine Learning" href="chapter-5.html" />
+    <link rel="prev" title="Bab 3 Data collection and data cleaning" href="chapter-3.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -91,13 +92,13 @@ const thebe_selector_output = ".output, .cell_output"
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 current">
-  <a class="reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
    Selamat datang di buku Data Analisis dengan Python
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="chapter-1.html">
    Bab 1 Memulai pemrograman dengan python
@@ -113,8 +114,8 @@ const thebe_selector_output = ".output, .cell_output"
    Bab 3 Data collection and data cleaning
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chapter-4.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Bab 4 Exploratory Data Analysis
   </a>
  </li>
@@ -164,9 +165,9 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/contents/intro.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/contents/chapter-4.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -184,7 +185,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/alifianmahardhika/data-analyst-book/issues/new?title=Issue%20on%20page%20%2Fcontents/intro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/alifianmahardhika/data-analyst-book/issues/new?title=Issue%20on%20page%20%2Fcontents/chapter-4.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -200,6 +201,23 @@ const thebe_selector_output = ".output, .cell_output"
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/alifianmahardhika/data-analyst-book/main?urlpath=tree/book/contents/chapter-4.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
@@ -212,7 +230,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Selamat datang di buku Data Analisis dengan Python</h1>
+                <h1>Bab 4 Exploratory Data Analysis</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -223,18 +241,8 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="selamat-datang-di-buku-data-analisis-dengan-python">
-<h1>Selamat datang di buku Data Analisis dengan Python<a class="headerlink" href="#selamat-datang-di-buku-data-analisis-dengan-python" title="Permalink to this headline">¶</a></h1>
-<p>Ini adalah halaman depan bisa diisi dengan kata pengantar dan daftar isi</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="chapter-1.html">Bab 1 Memulai pemrograman dengan python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter-2.html">Bab 2 For-loop and function</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter-3.html">Bab 3 Data collection and data cleaning</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter-4.html">Bab 4 Exploratory Data Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter-5.html">Bab 5 Perkenalan dengan Machine Learning</a></li>
-</ul>
-</div>
+  <div class="tex2jax_ignore mathjax_ignore section" id="bab-4-exploratory-data-analysis">
+<h1>Bab 4 Exploratory Data Analysis<a class="headerlink" href="#bab-4-exploratory-data-analysis" title="Permalink to this headline">¶</a></h1>
 </div>
 
     <script type="text/x-thebe-config">
@@ -261,11 +269,18 @@ const thebe_selector_output = ".output, .cell_output"
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="chapter-1.html" title="next page">
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="chapter-3.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Bab 3 Data collection and data cleaning</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="chapter-5.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Bab 1 Memulai pemrograman dengan python</p>
+        <p class="prev-next-title">Bab 5 Perkenalan dengan Machine Learning</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
